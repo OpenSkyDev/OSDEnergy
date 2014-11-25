@@ -27,3 +27,5 @@
 }
 
 @end
+
+NSString *const OSDEngineErrorDomain = @"OSDEngineErrorDomain";

@@ -8,6 +8,9 @@
 
 // MARK: - Helpers
 #import <OSDEngine/OSDErrorHandler.h>
+#import <OSDEngine/OSDEngineHelper.h>
+
+// MARK: - Logging
 #import <OSDEngine/OSDEngineLogger.h>
 
 // MARK: - Scripting

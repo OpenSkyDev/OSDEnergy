@@ -17,11 +17,4 @@
 
 @end
 
-FOUNDATION_EXTERN
-NSString *const OSDEngineErrorDomain;
-
-typedef NS_ENUM(NSInteger, OSDEngineError) {
-    OSDEngineErrorCodeUnknown = 'unkn'
-};
-
 #endif

@@ -13,6 +13,8 @@
 @import Foundation;
 @import JavaScriptCore;
 
+#import "OSDEngineHelper.h"
+
 @protocol OSDErrorHandler;
 
 
@@ -94,5 +96,8 @@
 - (JSValue *)evaluateFunction:(NSString *)function withArguments:(NSArray *)args;
 
 @end
+
+OSD_ENGINE_EXTERN
+NSString *const kOSDScriptExceptionValue;
 
 #endif

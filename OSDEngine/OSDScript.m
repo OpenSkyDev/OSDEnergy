@@ -43,6 +43,19 @@
     return _context;
 }
 - (void)prepareContext:(JSContext *)context {
+    typeof(self) __weak welf = self;
+    
+    [context setExceptionHandler:^(JSContext *ctx, JSValue *val) {
+        if (welf.errorHandler && [welf.errorHandler respondsToSelector:@selector(object:raisedError:)]) {
+            NSDictionary *userInfo = @{
+                                       NSLocalizedDescriptionKey: NSLocalizedString(@"JavaScript exception", nil),
+                                       kOSDScriptExceptionValue: [val toObject]
+                                       };
+            NSError *error = [NSError errorWithDomain:OSDEngineErrorDomain code:OSDEngineErrorCodeJSException userInfo:userInfo];
+            [welf.errorHandler object:welf raisedError:error];
+        }
+    }];
+    
     [context evaluateScript:[self.class sharedScriptFile]];
     
     context[@"OSD"][@"log"] = ^ (NSString *msg) {
@@ -83,3 +96,5 @@
 }
 
 @end
+
+NSString *const kOSDScriptExceptionValue = @"exception";

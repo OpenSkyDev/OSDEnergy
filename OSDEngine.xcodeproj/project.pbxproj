@@ -17,6 +17,8 @@
 		940AA1431A24425700E476EF /* OSDScript.js in Resources */ = {isa = PBXBuildFile; fileRef = 940AA1421A24425700E476EF /* OSDScript.js */; };
 		940AA1461A2443FD00E476EF /* OSDEngineLogger.h in Headers */ = {isa = PBXBuildFile; fileRef = 940AA1441A2443FD00E476EF /* OSDEngineLogger.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		940AA1471A2443FD00E476EF /* OSDEngineLogger.m in Sources */ = {isa = PBXBuildFile; fileRef = 940AA1451A2443FD00E476EF /* OSDEngineLogger.m */; };
+		94FB41001A245179008CE17D /* OSDEngineHelper.h in Headers */ = {isa = PBXBuildFile; fileRef = 94FB40FF1A245173008CE17D /* OSDEngineHelper.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		94FB41021A2451D4008CE17D /* OSDEngineHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 94FB41011A2451D4008CE17D /* OSDEngineHelper.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -43,6 +45,8 @@
 		940AA1421A24425700E476EF /* OSDScript.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = OSDScript.js; sourceTree = "<group>"; };
 		940AA1441A2443FD00E476EF /* OSDEngineLogger.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OSDEngineLogger.h; sourceTree = "<group>"; };
 		940AA1451A2443FD00E476EF /* OSDEngineLogger.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OSDEngineLogger.m; sourceTree = "<group>"; };
+		94FB40FF1A245173008CE17D /* OSDEngineHelper.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OSDEngineHelper.h; sourceTree = "<group>"; };
+		94FB41011A2451D4008CE17D /* OSDEngineHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OSDEngineHelper.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -86,6 +90,8 @@
 			isa = PBXGroup;
 			children = (
 				940AA1231A243BC900E476EF /* OSDEngine.h */,
+				94FB40FF1A245173008CE17D /* OSDEngineHelper.h */,
+				94FB41011A2451D4008CE17D /* OSDEngineHelper.m */,
 				940AA13E1A243C9300E476EF /* OSDErrorHandler.h */,
 				940AA1481A24440500E476EF /* Scripting */,
 				940AA1491A24440C00E476EF /* Logging */,
@@ -147,6 +153,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				940AA13C1A243BE200E476EF /* OSDScript.h in Headers */,
+				94FB41001A245179008CE17D /* OSDEngineHelper.h in Headers */,
 				940AA1461A2443FD00E476EF /* OSDEngineLogger.h in Headers */,
 				940AA13F1A243C9300E476EF /* OSDErrorHandler.h in Headers */,
 				940AA1241A243BC900E476EF /* OSDEngine.h in Headers */,
@@ -252,6 +259,7 @@
 			files = (
 				940AA1471A2443FD00E476EF /* OSDEngineLogger.m in Sources */,
 				940AA13D1A243BE200E476EF /* OSDScript.m in Sources */,
+				94FB41021A2451D4008CE17D /* OSDEngineHelper.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

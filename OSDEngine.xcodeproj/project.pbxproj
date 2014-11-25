@@ -10,6 +10,13 @@
 		940AA1241A243BC900E476EF /* OSDEngine.h in Headers */ = {isa = PBXBuildFile; fileRef = 940AA1231A243BC900E476EF /* OSDEngine.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		940AA12A1A243BC900E476EF /* OSDEngine.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 940AA11E1A243BC900E476EF /* OSDEngine.framework */; };
 		940AA1311A243BC900E476EF /* OSDEngineTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 940AA1301A243BC900E476EF /* OSDEngineTests.m */; };
+		940AA13C1A243BE200E476EF /* OSDScript.h in Headers */ = {isa = PBXBuildFile; fileRef = 940AA13A1A243BE200E476EF /* OSDScript.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		940AA13D1A243BE200E476EF /* OSDScript.m in Sources */ = {isa = PBXBuildFile; fileRef = 940AA13B1A243BE200E476EF /* OSDScript.m */; };
+		940AA13F1A243C9300E476EF /* OSDErrorHandler.h in Headers */ = {isa = PBXBuildFile; fileRef = 940AA13E1A243C9300E476EF /* OSDErrorHandler.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		940AA1411A243ED600E476EF /* OSDScriptTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 940AA1401A243ED600E476EF /* OSDScriptTests.m */; };
+		940AA1431A24425700E476EF /* OSDScript.js in Resources */ = {isa = PBXBuildFile; fileRef = 940AA1421A24425700E476EF /* OSDScript.js */; };
+		940AA1461A2443FD00E476EF /* OSDEngineLogger.h in Headers */ = {isa = PBXBuildFile; fileRef = 940AA1441A2443FD00E476EF /* OSDEngineLogger.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		940AA1471A2443FD00E476EF /* OSDEngineLogger.m in Sources */ = {isa = PBXBuildFile; fileRef = 940AA1451A2443FD00E476EF /* OSDEngineLogger.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -29,6 +36,13 @@
 		940AA1291A243BC900E476EF /* OSDEngineTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = OSDEngineTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		940AA12F1A243BC900E476EF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		940AA1301A243BC900E476EF /* OSDEngineTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OSDEngineTests.m; sourceTree = "<group>"; };
+		940AA13A1A243BE200E476EF /* OSDScript.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OSDScript.h; sourceTree = "<group>"; };
+		940AA13B1A243BE200E476EF /* OSDScript.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OSDScript.m; sourceTree = "<group>"; };
+		940AA13E1A243C9300E476EF /* OSDErrorHandler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OSDErrorHandler.h; sourceTree = "<group>"; };
+		940AA1401A243ED600E476EF /* OSDScriptTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OSDScriptTests.m; sourceTree = "<group>"; };
+		940AA1421A24425700E476EF /* OSDScript.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = OSDScript.js; sourceTree = "<group>"; };
+		940AA1441A2443FD00E476EF /* OSDEngineLogger.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OSDEngineLogger.h; sourceTree = "<group>"; };
+		940AA1451A2443FD00E476EF /* OSDEngineLogger.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OSDEngineLogger.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -72,6 +86,9 @@
 			isa = PBXGroup;
 			children = (
 				940AA1231A243BC900E476EF /* OSDEngine.h */,
+				940AA13E1A243C9300E476EF /* OSDErrorHandler.h */,
+				940AA1481A24440500E476EF /* Scripting */,
+				940AA1491A24440C00E476EF /* Logging */,
 				940AA1211A243BC900E476EF /* Supporting Files */,
 			);
 			path = OSDEngine;
@@ -89,6 +106,7 @@
 			isa = PBXGroup;
 			children = (
 				940AA1301A243BC900E476EF /* OSDEngineTests.m */,
+				940AA1401A243ED600E476EF /* OSDScriptTests.m */,
 				940AA12E1A243BC900E476EF /* Supporting Files */,
 			);
 			path = OSDEngineTests;
@@ -102,6 +120,25 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		940AA1481A24440500E476EF /* Scripting */ = {
+			isa = PBXGroup;
+			children = (
+				940AA13A1A243BE200E476EF /* OSDScript.h */,
+				940AA13B1A243BE200E476EF /* OSDScript.m */,
+				940AA1421A24425700E476EF /* OSDScript.js */,
+			);
+			name = Scripting;
+			sourceTree = "<group>";
+		};
+		940AA1491A24440C00E476EF /* Logging */ = {
+			isa = PBXGroup;
+			children = (
+				940AA1441A2443FD00E476EF /* OSDEngineLogger.h */,
+				940AA1451A2443FD00E476EF /* OSDEngineLogger.m */,
+			);
+			name = Logging;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
@@ -109,6 +146,9 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				940AA13C1A243BE200E476EF /* OSDScript.h in Headers */,
+				940AA1461A2443FD00E476EF /* OSDEngineLogger.h in Headers */,
+				940AA13F1A243C9300E476EF /* OSDErrorHandler.h in Headers */,
 				940AA1241A243BC900E476EF /* OSDEngine.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -192,6 +232,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				940AA1431A24425700E476EF /* OSDScript.js in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -209,6 +250,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				940AA1471A2443FD00E476EF /* OSDEngineLogger.m in Sources */,
+				940AA13D1A243BE200E476EF /* OSDScript.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -217,6 +260,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				940AA1311A243BC900E476EF /* OSDEngineTests.m in Sources */,
+				940AA1411A243ED600E476EF /* OSDScriptTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -394,6 +438,7 @@
 				940AA1361A243BC900E476EF /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		940AA1371A243BC900E476EF /* Build configuration list for PBXNativeTarget "OSDEngineTests" */ = {
 			isa = XCConfigurationList;
@@ -402,6 +447,7 @@
 				940AA1391A243BC900E476EF /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
